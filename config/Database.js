@@ -1,8 +1,10 @@
-import {Sequelize} from "sequelize";
+import { Sequelize } from "sequelize";
 
-const db = new Sequelize('crud_db','root','',{
+// Création d'une instance Sequelize pour la connexion à la base de données
+const db = new Sequelize('mydatabase', 'abstract-programmer', 'issat2020', {
     host: 'localhost',
     dialect: 'mysql'
 });
 
+// Exportation de l'instance Sequelize
 export default db;
